@@ -10,6 +10,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Teko", sans-serif;
+  color: white;
+  font-size: 300%;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 .button-container {
@@ -42,4 +52,10 @@ button:hover {
 button:active {
   transform: translateY(3px);
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 250%;
+  }
 }
